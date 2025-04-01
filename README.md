@@ -1,18 +1,8 @@
 # Frontend Mentor - Insure landing page solution
 
-This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8).
 
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 
 ## Overview
 
