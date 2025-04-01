@@ -4,8 +4,6 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
 
-## Overview
-
 ## My process
 
 ### Built with
