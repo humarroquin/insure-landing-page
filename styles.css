@@ -1,0 +1,137 @@
+/* font files */
+@font-face {
+  font-display: swap;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/dm-serif-display-v15-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/karla-v31-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/karla-v31-latin-700.woff2") format("woff2");
+}
+
+/* CSS RESET — Josh Comeau */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* VARIABLES */
+:root {
+  /* colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-purple: hsl(256, 26%, 20%);
+  --clr-black: hsl(270, 9%, 17%);
+  --clr-light-blue: hsl(216, 30%, 68%);
+  --clr-grayish-purple: hsl(273, 4%, 51%);
+
+  /* font family */
+  --ff-headings: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --ff-body: "Karla", Arial, Helvetica, sans-serif;
+
+  /* font weights */
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+
+  /* spacing */
+  --size-100: 1rem; /* 16px */
+  --size-200: 1.5rem; /* 24px */
+  --size-300: 2rem; /* 32px */
+  --size-400: 2.25rem; /* 36px */
+  --size-500: 3rem; /* 48px */
+  --size-600: 6rem; /* 96px */
+  --size-700: 9.375rem; /* 150px */
+}
+
+/* Utility classes */
+/* 72px-48px */
+.heading-primary {
+  font-size: 3rem;
+  font-size: clamp(3rem, 2.2346938775510203rem + 3.265306122448979vw, 4.5rem);
+}
+
+/* 56px-40px */
+.heading-secondary {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 1.989795918367347rem + 2.1768707482993195vw, 3.5rem);
+}
+
+/* 28px */
+.heading-tertiary {
+  font-size: 1.75rem;
+}
+
+/* 18-px-16px */
+.body-text {
+  font-size: 1rem;
+  font-size: clamp(
+    1rem,
+    0.9362244897959183rem + 0.27210884353741494vw,
+    1.125rem
+  );
+}
+
+.container {
+  --max-width: 69.375rem;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/* PAGE STYLES */
+body {
+  /* part of the css reset */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* part of the css reset */
+}
