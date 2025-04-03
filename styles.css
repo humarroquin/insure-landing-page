@@ -82,6 +82,9 @@ h6 {
   --fw-regular: 400;
   --fw-semi-bold: 700;
 
+  /* font sizes */
+  --fs-links: 0.8125rem;
+
   /* spacing */
   --size-100: 1rem; /* 16px */
   --size-200: 1.5rem; /* 24px */
@@ -93,6 +96,14 @@ h6 {
 }
 
 /* Utility classes */
+.container {
+  --max-width: 69.375rem;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
 /* 72px-48px */
 .heading-primary {
   font-size: 3rem;
@@ -110,22 +121,41 @@ h6 {
   font-size: 1.75rem;
 }
 
-/* 18-px-16px */
-.body-text {
-  font-size: 1rem;
-  font-size: clamp(
-    1rem,
-    0.9362244897959183rem + 0.27210884353741494vw,
-    1.125rem
-  );
+.display-flex {
+  display: flex;
 }
 
-.container {
-  --max-width: 69.375rem;
-  --padding: 1rem;
+.grid-2cols-even {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3cols-even {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4cols-even {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
+.btn {
+  border: 1.5px solid var(--clr-black);
+  padding: 0.8125em 1.78125em;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: var(--fs-links);
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.btn:is(:hover, :focus-visible) {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+.btn--light:is(:hover, :focus-visible) {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
 }
 
 /* PAGE STYLES */
@@ -134,4 +164,34 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   /* part of the css reset */
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  /* 18-px-16px */
+  font-size: clamp(
+    1rem,
+    0.9362244897959183rem + 0.27210884353741494vw,
+    1.125rem
+  );
+}
+
+/* header */
+.header {
+  padding-block: var(--size-300);
+  align-items: center;
+}
+.logo-wrapper {
+  margin-right: auto;
+}
+.nav-links {
+  list-style: none;
+  gap: var(--size-400);
+  margin-right: var(--size-300);
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--clr-grayish-purple);
+  transition: color 0.5s ease;
+}
+.nav-links a:is(:hover, :focus-visible) {
+  color: var(--clr-black);
 }
