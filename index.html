@@ -11,6 +11,14 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="main.js" defer></script>
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <body>
@@ -25,22 +33,27 @@
           <li><a href="#">Account</a></li>
         </ul>
       </nav>
-      <button class="btn">View plans</button>
+      <button type="button" class="btn-nav | btn">View plans</button>
+      <button type="button" class="mobile-btn">
+        <img src="/images/icon-hamburger.svg" alt="" />
+      </button>
     </header>
     <main>
-      <section class="container grid-2cols-even">
-        <div>
-          <h1>Humanizing your insurance.</h1>
-          <p>
-            Get your life insurance coverage easier and faster. We blend our
-            expertise and technology to help you find the plan that’s right for
-            you. Ensure you and your loved ones are protected.
-          </p>
-          <button class="btn btn--light">View plans</button>
+      <section class="hero">
+        <div class="container grid-2cols-even">
+          <div>
+            <h1>Humanizing your insurance.</h1>
+            <p>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <button class="btn btn--light">View plans</button>
+          </div>
+          <figure>
+            <img src="./images/image-intro-desktop.jpg" alt="" />
+          </figure>
         </div>
-        <figure>
-          <img src="./images/image-intro-desktop.jpg" alt="" />
-        </figure>
       </section>
       <section class="container">
         <h2>We’re different</h2>
@@ -74,22 +87,30 @@
       </section>
     </main>
     <footer class="container">
-      <div class="top-footer">
+      <div class="top-footer grid-2cols-even">
         <figure>
           <img src="./images/logo.svg" alt="Insure" />
         </figure>
-        <ul class="social-icons">
+        <ul class="social-icons display-flex">
           <li>
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+            <a href="#">
+              <i class="fa-brands fa-square-pinterest"></i>
+            </a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -130,13 +151,5 @@
         </div>
       </div>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
