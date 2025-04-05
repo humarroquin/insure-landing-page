@@ -347,6 +347,9 @@ a {
 
 /* media queries */
 @media (max-width: 46.875em) {
+  body.no-scroll {
+    overflow: hidden;
+  }
   .hero {
     --background-height: 100%;
     padding-top: 0;
@@ -423,6 +426,10 @@ a {
     background-size: 40% 100%;
     background-repeat: no-repeat;
     background-position: top right;
+  }
+  .cta__heading {
+    max-width: 13ch;
+    margin-inline: auto;
   }
   .cta__btn {
     justify-self: center;
