@@ -447,15 +447,12 @@ a {
 
 /* top footer */
 .footer__social-icons {
-  list-style: none;
   gap: var(--size-100);
   justify-self: end;
-  padding: 0;
 }
 .footer__social-icons a {
   text-decoration: none;
   color: var(--clr-grayish-purple);
-  transition: color 0.5s ease;
 }
 .footer__social-icons a:is(:hover, :focus-visible) {
   color: var(--clr-black);
@@ -486,11 +483,7 @@ a {
   font-size: var(--fs-links);
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  padding-top: 48px;
-}
-.bottom-footer ul {
-  padding: 0;
-  list-style: none;
+  padding-top: var(--size-500);
 }
 .bottom-footer ul > *:not(:last-child) {
   margin-bottom: var(--size-100);
