@@ -327,6 +327,25 @@ section {
   justify-self: end;
 }
 
+@media (max-width: 46.875em) {
+  .cta {
+    text-align: center;
+    gap: var(--size-450);
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .cta__btn {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 35.1875em) {
+  .cta {
+    padding-inline: var(--size-200);
+  }
+}
+
 /* media queries */
 @media (max-width: 46.875em) {
   .btn-nav,
