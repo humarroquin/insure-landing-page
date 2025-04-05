@@ -69,6 +69,8 @@ h6 {
 :root {
   /* colors */
   --clr-white: hsl(0, 0%, 100%);
+  --clr-grayish-white: hsl(0, 0%, 98%);
+  --gray: hsl(0, 0%, 85%);
   --clr-purple: hsl(256, 26%, 20%);
   --clr-black: hsl(270, 9%, 17%);
   --clr-pink: hsl(296, 30%, 68%);
@@ -320,6 +322,7 @@ section {
   padding: 69px 80px;
   align-items: center;
   background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-size: 40% 100%;
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -332,6 +335,7 @@ section {
     text-align: center;
     gap: var(--size-450);
     background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-size: 40% 100%;
     background-repeat: no-repeat;
     background-position: top right;
   }
@@ -343,6 +347,75 @@ section {
 @media (max-width: 35.1875em) {
   .cta {
     padding-inline: var(--size-200);
+  }
+}
+
+/* footer */
+.footer {
+  background-color: var(--clr-grayish-white);
+  padding-block: var(--size-550);
+}
+
+/* top footer */
+.footer__social-icons {
+  list-style: none;
+  gap: var(--size-100);
+  justify-self: end;
+  padding: 0;
+}
+.footer__social-icons a {
+  text-decoration: none;
+  color: var(--clr-grayish-purple);
+  transition: color 0.5s ease;
+}
+.footer__social-icons a:is(:hover, :focus-visible) {
+  color: var(--clr-black);
+}
+.top-footer {
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: var(--size-300);
+}
+
+@media (max-width: 46.875em) {
+  .top-footer {
+    justify-items: center;
+    gap: var(--size-300);
+  }
+  .footer__social-icons {
+    justify-self: center;
+  }
+}
+
+/* bottom footer */
+.bottom-footer {
+  font-size: var(--fs-links);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-top: 48px;
+}
+.bottom-footer ul {
+  padding: 0;
+  list-style: none;
+}
+.bottom-footer ul > *:not(:last-child) {
+  margin-bottom: var(--size-100);
+}
+.footer-links ul a {
+  text-decoration: none;
+  color: var(--clr-black);
+  font-weight: var(--fw-semi-bold);
+}
+.footer-links ul a:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
+.footer-links h3 {
+  color: var(--clr-grayish-purple);
+  margin-bottom: var(--size-300);
+}
+
+@media (max-width: 35.1875em) {
+  .bottom-footer {
+    text-align: center;
   }
 }
 
