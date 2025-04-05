@@ -98,6 +98,8 @@ h6 {
   --size-450: 2.5rem; /* 40px */
   --size-500: 3rem; /* 48px */
   --size-550: 3.9375rem; /* 63px */
+  --size-560: 4.3125rem; /* 69px */
+  --size-570: 5rem; /* 80px */
   --size-575: 5.8125rem; /* 93px */
   --size-600: 6rem; /* 96px */
   --size-650: 6.5625rem; /* 105px */
@@ -402,7 +404,7 @@ a {
 .cta {
   color: var(--clr-white);
   background-color: var(--clr-purple);
-  padding: 69px 80px;
+  padding: var(--size-560) var(--size-570);
   align-items: center;
   background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
   background-size: 40% 100%;
