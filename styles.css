@@ -226,7 +226,7 @@ section {
   height: var(--header-height);
   align-items: center;
 }
-.logo-wrapper {
+.header img {
   margin-right: auto;
 }
 .nav-links {
@@ -354,6 +354,10 @@ section {
 .footer {
   background-color: var(--clr-grayish-white);
   padding-block: var(--size-550);
+  background-image: url(./images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40% 50%;
 }
 
 /* top footer */
@@ -377,6 +381,12 @@ section {
 }
 
 @media (max-width: 46.875em) {
+  .footer {
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 15%;
+    background-position: top center;
+  }
   .top-footer {
     justify-items: center;
     gap: var(--size-300);
