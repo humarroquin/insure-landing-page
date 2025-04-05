@@ -23,16 +23,25 @@
   </head>
   <body>
     <header class="header | container display-flex">
-        <img src="./images/logo.svg" alt="Insure" />
+      <img class="logo" src="./images/logo.svg" alt="Insure" />
       <nav>
-        <ul class="nav-links | display-flex">
+        <ul class="header__nav-links | display-flex">
           <li><a href="#">How we work</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Account</a></li>
+          <li>
+            <button
+              class="header__button | header__button--mobile btn btn--light"
+              type="button"
+            >
+              View plans
+            </button>
+          </li>
         </ul>
       </nav>
-      <button type="button" class="btn-nav | btn">View plans</button>
-      <button type="button" class="mobile-btn">
+      <button class="header__button | btn" type="button">View plans</button>
+      <!-- hamburger menu button -->
+      <button class="header__hamburger-btn" type="button">
         <img src="/images/icon-hamburger.svg" alt="" />
       </button>
     </header>
@@ -49,9 +58,17 @@
             </p>
             <button class="btn btn--light">View plans</button>
           </div>
-          <figure class="hero__image-wrapper">
-            <img src="./images/image-intro-desktop.jpg" alt="" />
-          </figure>
+          <picture class="hero__image-wrapper">
+            <source
+              srcset="./images/image-intro-mobile.jpg"
+              media="(max-width: 35.1875em)"
+            />
+            <img
+              class="hero__img"
+              src="./images/image-intro-desktop.jpg"
+              alt="Descriptive alt text"
+            />
+          </picture>
         </div>
       </section>
       <section class="features | container">
@@ -109,7 +126,7 @@
     </main>
     <footer class="footer">
       <div class="top-footer container grid-2cols-even">
-          <img src="./images/logo.svg" alt="Insure" />
+        <img class="logo" src="./images/logo.svg" alt="Insure" />
         <ul class="footer__social-icons | display-flex">
           <li>
             <a href="#" aria-label="facebook">

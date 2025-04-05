@@ -1,5 +1,5 @@
-const mobileBtn = document.querySelector(".mobile-btn");
-const menu = document.querySelector(".nav-links");
+const mobileBtn = document.querySelector(".header__hamburger-btn");
+const menu = document.querySelector(".header__nav-links");
 
 function toggleMenu() {
   menu.classList.toggle("show");
