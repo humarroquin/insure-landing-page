@@ -115,13 +115,17 @@ h6 {
   margin-inline: auto;
 }
 
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  line-height: 1;
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-regular);
+}
 /* 72px-48px */
 .heading-primary {
   font-size: 3rem;
   font-size: clamp(3rem, 2.2346938775510203rem + 3.265306122448979vw, 4.5rem);
-  line-height: 1;
-  font-family: var(--ff-headings);
-  font-weight: var(--fw-regular);
   letter-spacing: -1px;
 }
 
@@ -129,18 +133,12 @@ h6 {
 .heading-secondary {
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 1.989795918367347rem + 2.1768707482993195vw, 3.5rem);
-  line-height: 1;
-  font-family: var(--ff-headings);
-  font-weight: var(--fw-regular);
   letter-spacing: -0.78px;
 }
 
 /* 28px */
 .heading-tertiary {
   font-size: 1.75rem;
-  line-height: 1;
-  font-family: var(--ff-headings);
-  font-weight: var(--fw-regular);
   letter-spacing: -0.39px;
 }
 
@@ -199,7 +197,7 @@ h6 {
 
 .divider {
   height: 1px;
-  width: 150px;
+  width: 9.375rem;
   background-color: var(--clr-grayish-purple);
   margin-bottom: var(--size-550);
 }
